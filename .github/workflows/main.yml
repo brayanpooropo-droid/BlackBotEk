@@ -10,10 +10,12 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      # Actualizado de v3 a v4
+      uses: actions/checkout@v4
 
     - name: Set up JDK
-      uses: actions/setup-java@v3
+      # Actualizado de v3 a v4
+      uses: actions/setup-java@v4
       with:
         distribution: 'temurin'
         java-version: '17'
@@ -24,7 +26,9 @@ jobs:
         ./gradlew assembleDebug
 
     - name: Upload APK
-      uses: actions/upload-artifact@v3
+      # ESTA ES LA CORRECCIÓN CRÍTICA: Actualizado de v3 a v4
+      uses: actions/upload-artifact@v4
       with:
         name: BlackBotEk-apk
         path: app/build/outputs/apk/debug/*.apk
+        
