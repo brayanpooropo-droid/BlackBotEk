@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "984368516661",
+    "firebase_url": "https://blckbotek01-default-rtdb.firebaseio.com",
+    "project_id": "blckbotek01",
+    "storage_bucket": "blckbotek01.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984368516661:android:19e6687318dce41137eb7c",
+        "android_client_info": {
+          "package_name": "com.blackbotek.app1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIyA7xD0aikZEL4Q-iRD1Iv2-K2vSN18I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

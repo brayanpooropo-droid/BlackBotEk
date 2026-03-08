@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BlackBotEk</string>
+    <string name="accessibility_service_description">Asistente automático para conductores InDrive. Detecta y acepta viajes rentables según tus filtros.</string>
+</resources>

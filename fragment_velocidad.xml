@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a1a1a">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- SECCIÓN: SELECTOR DE VELOCIDAD -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selector de Velocidad de Reacción"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Botón MODO FLASH (Rojo) -->
+        <Button
+            android:id="@+id/btnModoFlash"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="🔴 MODO FLASH - 50 ms"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="#FF4444"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Botón MODO COMPETITIVO (Naranja) -->
+        <Button
+            android:id="@+id/btnModoCompetitivo"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="🟠 MODO COMPETITIVO - 150 ms"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="#FF9800"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Botón MODO NORMAL SEGURO (Verde) -->
+        <Button
+            android:id="@+id/btnModoNormal"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="🟢 MODO NORMAL SEGURO - 350 ms"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Botón MODO HUMANO (Azul) -->
+        <Button
+            android:id="@+id/btnModoHumano"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="🔵 MODO HUMANO - 600 ms"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="#2196F3"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp" />
+
+        <!-- SECCIÓN: GANANCIA EXTRA -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ganancia Extra (Contraoferta)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#2a2a2a"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/btnMenosGanancia"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="24sp"
+                android:background="#FF4444"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="10dp" />
+
+            <TextView
+                android:id="@+id/txtGanancia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="$0.00"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#00FF00"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btnMasGanancia"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="+"
+                android:textSize="24sp"
+                android:background="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+
+        <!-- SECCIÓN: PRECIO DE ORO (VIP) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#2a2a2a"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Precio de Oro (VIP)"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchPrecioOro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etPrecioOro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Aceptar si paga más de $X por KM"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:background="#2a2a2a"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:layout_marginBottom="20dp" />
+
+        <!-- SECCIÓN: FILTRO DE PASAJERO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filtro de Reputación del Pasajero"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#2a2a2a"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="⭐ Calificación mínima:"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/txtCalificacionPasajero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.8"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFD700" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/sliderCalificacionPasajero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:min="1"
+            android:max="50"
+            android:progress="48"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Botón Guardar -->
+        <Button
+            android:id="@+id/btnGuardarVelocidad"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="GUARDAR CONFIGURACIÓN"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="#00FF00"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</ScrollView>

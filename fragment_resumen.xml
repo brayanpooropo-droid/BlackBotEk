@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a1a1a">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- ESTADO DEL BOT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#2a2a2a"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado del Bot"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_marginBottom="15dp" />
+
+            <TextView
+                android:id="@+id/txtEstadoBot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔴 BOT INACTIVO"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:gravity="center"
+                android:layout_marginBottom="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Toca el botón de abajo para activar/desactivar"
+                android:textSize="12sp"
+                android:textColor="#888888"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- INFORMACIÓN DE SUSCRIPCIÓN -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#2a2a2a"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Días Restantes:"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtDiasRestantes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 días"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF9800" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Estado de Suscripción:"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtEstadoSuscripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pendiente"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF0000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tu ID:"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtIDUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BOT-XXXX-XXXX"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#00FF00" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- RESUMEN DE CONFIGURACIÓN -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resumen de Configuración"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Card: Velocidad -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#2a2a2a"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Velocidad de Reacción:"
+                android:textSize="13sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/txtVelocidadResumen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal (350ms)"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#4CAF50" />
+        </LinearLayout>
+
+        <!-- Card: Ganancia -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#2a2a2a"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ganancia Extra:"
+                android:textSize="13sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/txtGananciaResumen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$0.00"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#00FF00" />
+        </LinearLayout>
+
+        <!-- Card: Precio de Oro -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#2a2a2a"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Precio de Oro:"
+                android:textSize="13sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/txtPrecioOroResumen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desactivado"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FF9800" />
+        </LinearLayout>
+
+        <!-- Card: Filtro Pasajero -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#2a2a2a"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Calificación Mínima:"
+                android:textSize="13sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/txtCalificacionResumen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.8 ⭐"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FFD700" />
+        </LinearLayout>
+
+        <!-- Card: Modo Hora Pico -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#2a2a2a"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Modo Hora Pico:"
+                android:textSize="13sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/txtHoraPicoResumen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desactivado"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FF0000" />
+        </LinearLayout>
+
+        <!-- BOTÓN PRINCIPAL: ACTIVAR/DESACTIVAR -->
+        <Button
+            android:id="@+id/btnActivarBot"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="🔴 ACTIVAR BOT"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="#FF4444"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Botón Secundario: Solicitar Activación -->
+        <Button
+            android:id="@+id/btnSolicitarActivacion"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="📱 Solicitar Activación por WhatsApp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="#25D366"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</ScrollView>
+

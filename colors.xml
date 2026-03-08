@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00FF00</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#00FF00</color>
+    <color name="background_dark">#1a1a1a</color>
+    <color name="surface_dark">#2a2a2a</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#888888</color>
+    <color name="bot_active">#00FF00</color>
+    <color name="bot_inactive">#FF4444</color>
+    <color name="warning">#FF9800</color>
+</resources>
